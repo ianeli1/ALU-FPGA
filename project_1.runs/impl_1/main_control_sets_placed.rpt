@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Mon May  1 23:45:09 2023
-| Host         : ZhongGaming running 64-bit major release  (build 9200)
+| Date         : Tue May  9 17:36:44 2023
+| Host         : IanElizondoMS1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
 | Device       : xc7a35t
@@ -58,43 +58,43 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | No                     |               3 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              14 |            4 |
-| Yes          | No                    | No                     |               5 |            2 |
+| No           | Yes                   | No                     |              24 |            8 |
+| Yes          | No                    | No                     |              16 |           16 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              21 |           18 |
+| Yes          | Yes                   | No                     |               1 |            1 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+-------------------------+------------------+------------------+----------------+--------------+
-|     Clock Signal     |      Enable Signal      | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------+-------------------------+------------------+------------------+----------------+--------------+
-|  gen/jb_one_OBUF     | r/data[0]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[10]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[11]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[12]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[14]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[15]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[2]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[1]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[3]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[13]_i_1_n_0      | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[4]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[5]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[7]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[6]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[8]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     | r/data[9]_i_1_n_0       | btnC_IBUF        |                1 |              1 |         1.00 |
-|  CLK100MHZ_IBUF_BUFG |                         |                  |                1 |              1 |         1.00 |
-|  t/tx_reg_i_2_n_0    |                         |                  |                1 |              1 |         1.00 |
-|  gen/jb_one_OBUF     |                         |                  |                1 |              2 |         2.00 |
-|  gen/jb_one_OBUF     | r/counter[4]_i_1_n_0    | btnC_IBUF        |                2 |              5 |         2.50 |
-|  gen/jb_one_OBUF     | t/counter[4]_i_1__0_n_0 |                  |                2 |              5 |         2.50 |
-|  CLK100MHZ_IBUF_BUFG |                         | gen/out_clk      |                4 |             14 |         3.50 |
-+----------------------+-------------------------+------------------+------------------+----------------+--------------+
++----------------------+--------------------+----------------------+------------------+----------------+--------------+
+|     Clock Signal     |    Enable Signal   |   Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+--------------------+----------------------+------------------+----------------+--------------+
+|  gen/CLK             | r/data[2]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[15]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[4]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[0]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[3]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[6]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[10]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[12]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[7]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[14]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[9]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[13]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[1]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[8]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[5]_i_1_n_0  |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | r/data[11]_i_1_n_0 |                      |                1 |              1 |         1.00 |
+|  gen/CLK             | t/tx_i_1_n_0       | t/tx1_out            |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG |                    |                      |                1 |              1 |         1.00 |
+|  gen/CLK             |                    |                      |                2 |              2 |         1.00 |
+|  gen/CLK             |                    | r/counter[4]_i_1_n_0 |                2 |              5 |         2.50 |
+|  gen/CLK             |                    | t/tx1_out            |                2 |              5 |         2.50 |
+|  CLK100MHZ_IBUF_BUFG |                    | gen/out_clk          |                4 |             14 |         3.50 |
++----------------------+--------------------+----------------------+------------------+----------------+--------------+
 
 

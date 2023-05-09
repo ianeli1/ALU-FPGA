@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Time: 0ns | tx: x | busy0
+Time: 156ns | tx: 0 | busy1
+Time: 260ns | tx: 1 | busy1
+Time: 364ns | tx: 0 | busy1
+Time: 468ns | tx: 1 | busy1
+Time: 572ns | tx: 0 | busy1
+Time: 884ns | tx: 1 | busy1
+Time: 988ns | tx: 0 | busy1
+Time: 1092ns | tx: 1 | busy1
+Time: 1196ns | tx: 0 | busy1
+Time: 2132ns | tx: 1 | busy0
+$finish called at time : 10660 us : File "C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sim_1/new/Transmisor_tb.v" Line 62

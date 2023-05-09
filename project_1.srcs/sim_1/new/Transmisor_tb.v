@@ -27,6 +27,7 @@ module tb_Transmisor();
     reg send;
     wire tx;
     wire [4:0] counter_out;
+    wire busy;
     
     // Instantiate the UART transmitter module
     Transmisor transmitter (
@@ -34,7 +35,8 @@ module tb_Transmisor();
         .data(data),
         .send(send),
         .tx(tx),
-        .counter_out(counter_out)
+        .counter_out(counter_out),
+        .busy_out(busy)
     );
     
     // Clock generation
@@ -46,7 +48,7 @@ module tb_Transmisor();
     initial begin
         clk = 0;
         send = 0;
-        data = 16'b00110000_00110001;
+        data = 16'b00000000_01000101;
     
         // Send the data
         @(posedge clk) send <= 1;

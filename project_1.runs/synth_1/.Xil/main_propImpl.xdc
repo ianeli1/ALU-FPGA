@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/boiso/project_1/project_1.srcs/constrs_1/new/basys3.xdc rfile:../../../project_1.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/constrs_1/new/basys3.xdc} rfile:../../../project_1.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports CLK100MHZ]
 set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ} [current_design]

@@ -10,117 +10,113 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source main.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/boiso/project_1/project_1.srcs/utils_1/imports/synth_1/main.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/boiso/project_1/project_1.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 382.102 ; gain = 69.312
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/utils_1/imports/synth_1/main.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top main -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 34140
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [G:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-7075] Helper process launched with PID 18180
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1189.043 ; gain = 406.746
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1193.152 ; gain = 408.410
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/main.v:25]
-INFO: [Synth 8-6157] synthesizing module 'GeneradorReloj' [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/GeneradorReloj.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'GeneradorReloj' (0#1) [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/GeneradorReloj.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Receptor' [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Receptor.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Receptor' (0#1) [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Receptor.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Transmisor' [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Transmisor.v:23]
-WARNING: [Synth 8-567] referenced signal 'data' should be on the sensitivity list [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Transmisor.v:50]
-INFO: [Synth 8-6155] done synthesizing module 'Transmisor' (0#1) [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Transmisor.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/main.v:25]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:25]
+INFO: [Synth 8-6157] synthesizing module 'GeneradorReloj' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/GeneradorReloj.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GeneradorReloj' (0#1) [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/GeneradorReloj.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Receptor' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:23]
+WARNING: [Synth 8-6090] variable 'data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:60]
+WARNING: [Synth 8-6090] variable 'data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:62]
+WARNING: [Synth 8-6090] variable 'data' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:64]
+WARNING: [Synth 8-6090] variable 'ready' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:70]
+WARNING: [Synth 8-6090] variable 'counter' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'Receptor' (0#1) [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Receptor.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'data' does not match port width (24) of module 'Receptor' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:48]
+WARNING: [Synth 8-7071] port 'counter_out' of module 'Receptor' is unconnected for instance 'r' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:48]
+WARNING: [Synth 8-7023] instance 'r' of module 'Receptor' has 7 connections declared, but only 6 given [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:48]
+INFO: [Synth 8-6157] synthesizing module 'Transmisor' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Transmisor.v:23]
+WARNING: [Synth 8-6090] variable 'counter' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Transmisor.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'Transmisor' (0#1) [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Transmisor.v:23]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'Transmisor' is unconnected for instance 't' [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:50]
+WARNING: [Synth 8-7023] instance 't' of module 'Transmisor' has 6 connections declared, but only 5 given [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/main.v:25]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1279.508 ; gain = 497.211
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1283.934 ; gain = 499.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1279.508 ; gain = 497.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1283.934 ; gain = 499.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1279.508 ; gain = 497.211
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1283.934 ; gain = 499.191
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1279.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1283.934 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/boiso/project_1/project_1.srcs/constrs_1/new/basys3.xdc]
-Finished Parsing XDC File [C:/Users/boiso/project_1/project_1.srcs/constrs_1/new/basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/boiso/project_1/project_1.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Parsing XDC File [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.688 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1332.023 ; gain = 0.000
-INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [G:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1343.688 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Preparing Guide Design
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/boiso/project_1/project_1.srcs/utils_1/imports/synth_1/main.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
----------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'tx_reg' [C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Transmisor.v:52]
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1332.023 ; gain = 549.727
----------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   14 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 5     
 +---Registers : 
-	               16 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
 	               14 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input   16 Bit        Muxes := 1     
-	   2 Input    5 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 9     
-	   3 Input    1 Bit        Muxes := 1     
-	   6 Input    1 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 8     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	  32 Input    4 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -138,25 +134,40 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1343.688 ; gain = 558.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|main        | t/tx0      | 32x1          | LUT            | 
+|main        | t/tx0      | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -174,37 +185,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -222,40 +233,38 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     4|
-|3     |LUT1   |     2|
-|4     |LUT2   |     1|
-|5     |LUT3   |     2|
-|6     |LUT4   |     5|
-|7     |LUT5   |     6|
-|8     |LUT6   |    25|
+|3     |LUT1   |     1|
+|4     |LUT2   |     6|
+|5     |LUT3   |     6|
+|6     |LUT4   |     6|
+|7     |LUT5   |    12|
+|8     |LUT6   |    39|
 |9     |FDRE   |    43|
-|10    |LD     |     1|
+|10    |FDSE   |     1|
 |11    |IBUF   |     4|
 |12    |OBUF   |    19|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1332.023 ; gain = 497.211
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1332.023 ; gain = 549.727
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 1343.688 ; gain = 499.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1343.688 ; gain = 558.945
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1332.023 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1343.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1332.023 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1343.688 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LD => LDCE: 1 instance 
+No Unisim elements were transformed.
 
-Synth Design complete, checksum: 497272f
+Synth Design complete, checksum: 1c37da05
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+31 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:28 . Memory (MB): peak = 1332.023 ; gain = 926.875
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/boiso/project_1/project_1.runs/synth_1/main.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1343.688 ; gain = 937.727
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May  1 23:44:37 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue May  9 17:36:10 2023...

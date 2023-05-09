@@ -49,8 +49,6 @@ module Receptor(
             counter = 5'd0;
         end
         
-        
-        
         if(busy) begin
             counter = counter + 1;
             case(counter)

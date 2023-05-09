@@ -2,8 +2,6 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/boiso/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-C:/Users/boiso/project_1/project_1.srcs/sim_1/new/Transmisor_tb.v,1683003498,verilog,,,,tb_Transmisor,,,,,,,,
-C:/Users/boiso/project_1/project_1.srcs/sim_1/new/receptor_tb.v,1683521860,verilog,,,,receptor_tb,,,,,,,,
-C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Receptor.v,1683565466,verilog,,C:/Users/boiso/project_1/project_1.srcs/sim_1/new/receptor_tb.v,,Receptor,,,,,,,,
-C:/Users/boiso/project_1/project_1.srcs/sources_1/new/Transmisor.v,1683005467,verilog,,C:/Users/boiso/project_1/project_1.srcs/sim_1/new/Transmisor_tb.v,,Transmisor,,,,,,,,
+C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.sim/sim_1/behav/xsim/glbl.v,1683580759,verilog,,,,glbl,,,,,,,,
+C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sim_1/new/Transmisor_tb.v,1683583343,verilog,,,,tb_Transmisor,,,,,,,,
+C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sources_1/new/Transmisor.v,1683583195,verilog,,C:/Users/Ian Elizondo/OneDrive - Microsoft/Desktop/proyecto/ALU-FPGA/project_1.srcs/sim_1/new/Transmisor_tb.v,,Transmisor,,,,,,,,
